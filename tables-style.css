@@ -46,13 +46,6 @@
   color: #000000;
 }
 
-/*.datagrid table tbody td:first-child {
-  border-left: none;
-}*/
-
-.datagrid table tbody tr:last-child td {
-  border-bottom: none;
-}
 
 tr, th, td, table, thead, tbody, .alt, .datagrid {
   border: 5px solid #601599;

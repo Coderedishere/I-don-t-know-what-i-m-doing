@@ -42,7 +42,8 @@ INSERT INTO Artists (artistNames) VALUES ('BTS');
 INSERT INTO Albums (albumNames, albumReleaseDate, genre, artistNames) VALUES ('Whenever You Need Somebody', '1987-11-12', 'Dance-Pop', 'Rick Astley');
 INSERT INTO Albums (albumNames, albumReleaseDate, genre, artistNames) VALUES ('Love Yourself: Answer', '2018-08-24','Pop', 'BTS');
 INSERT INTO Tracks (trackNumbers, trackNames, trackLength, albumNames) VALUES (1, 'Never Gonna Give You Up', '00:03:33', 'Whenever You Need Somebody');
-INSERT INTO Tracks (trackNumbers, trackNames, trackLength, albumNames) VALUES (1, 'Euphoria', '00:03:48', 'Love Yourself: Answer');
+INSERT INTO Tracks (trackNumbers, trackNames, trackLength, albumNames) VALUES (4, 'DNA', '00:03:43', 'Love Yourself: Answer');
+INSERT INTO users (id, username, password) VALUES (1, 'final_user', 'sesame');
 
 CREATE USER IF NOT EXISTS 'final_user'@'localhost';
  

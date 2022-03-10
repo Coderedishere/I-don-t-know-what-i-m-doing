@@ -5,11 +5,14 @@
     <link rel="stylesheet" href="../Views/style.css">
  </head>  
  <body>  
-    <h2>Music Table</h2> 
+    <label>Music Table</label>
     <table>
-        <th><?= $_SESSION['artistNames']?></th>
-        <th><?= $_SESSION['albumNames']?></th>
-        <th><?= $_SESSION['album']?></th>
+        <th><?php echo $artists['artistNames']; ?></th>
+        <th><?php echo $albums['albumNames']; ?></th>
+        <th><?php echo $albums['genre']; ?></th>
+        <th><?php echo $tracks['trackNumbers']; ?></th>
+        <th><?php echo $tracks['trackNames']; ?></th>
+        <th><?php echo $tracks['trackLength']; ?></th>
         <br>
     </table>
         <a href="../Views/logout.php">Logout</a>

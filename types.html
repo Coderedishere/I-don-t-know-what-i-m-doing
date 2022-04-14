@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Types</title>
+  <script>
+
+function lieDetectorTest() {
+	var lies = 0;
+
+	var stolenDiamond = { };
+	if (stolenDiamond) {
+    	document.write("You stole the diamond");
+		document.write("<br>");
+		lies++;
+	}
+//the keysInPocket property is set to null, which means we intend to assign a value to this property but haven't yet.
+	var car = {
+    	keysInPocket: null
+	};
+    //
+	if (car.keysInPocket) {
+    	document.write("Uh oh, guess you stole the car!");
+		document.write("<br>");
+		lies++;
+	}
+	if (car.emptyGasTank) {
+    	document.write("You drove the car after you stole it!");
+		document.write("<br>");
+		lies++;
+	}
+
+	var foundYouAtTheCrimeScene = [ ];
+	if (foundYouAtTheCrimeScene) {
+    	document.write("A sure sign of guilt");
+		document.write("<br>");
+		lies++;
+	}
+	if (foundYouAtTheCrimeScene[0]) {
+    	document.write("Caught with a stolen item!");
+		document.write("<br>");
+		lies++;
+	}
+
+	var yourName = " ";
+	if (yourName) {
+    	document.write("Guess you lied about your name");
+		document.write("<br>");
+		lies++;
+	}
+	return lies;
+}
+var numberOfLies = lieDetectorTest();
+document.write("You told " + numberOfLies + " lies!");
+document.write("<br>");
+if (numberOfLies >= 3) {
+	document.write("Guilty as charged");
+}
+
+  </script>
+</head>
+<body>
+</body>
+</html>
